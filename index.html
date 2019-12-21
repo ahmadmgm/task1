@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="head-section mt-4 col-12">
+                <h3 class="text-muted">Upload Resumes</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, enim! Quas ea
+                </p>
+            </div>
+        </div>
+        <div class="container main-area p-5">
+            <div id="drop-area" class="col-12">
+                <div class="text-center">
+                        <label for="fileElem"><img src="images/logo_upload.png" width="70%" style="cursor: pointer;" class="img-fluid mt-5" alt="Upload image" /></label>
+                    <p class="mt-1 text-muted">Drop file here or click to upload</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 mt-4 text-right">
+                    <form class="my-form">
+                        <input type="file" id="fileElem" multiple accept="application/pdf"
+                            onchange="handleFiles(this.files)">
+                        <label class="btn btn-primary btn-lg active" for="fileElem">Upload CV</label>
+                        <p class="text-muted float-left">Note: You can upload maximum 15 Resumes</p>
+                    </form>
+                    <div class="col-12 text-left">
+                        <progress id="progress-bar" max=100 value=0></progress>
+                        <div id="gallery"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-5">
+                <p class="text-muted text-center mb-1">15 Resume Balance <span
+                        class="text-right float-right text-muted numberFiles">0 Resumes Uploaded</span></p>
+                <div class="progress">
+                    <div class="progress-bar" id="lastProgress" role="progressbar" aria-valuenow="25" aria-valuemin="1"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

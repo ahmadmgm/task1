@@ -1,0 +1,30 @@
+body {
+    background-color: #F3F3F3;
+  }
+
+  .main-area{
+      background: #FFF;
+  }
+  #drop-area {
+    border: 2px solid #EAEDF2;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 265px;
+  }
+
+  #drop-area.highlight {
+    border-color: purple;
+  }
+
+  .progress {
+    background-color: #70777d;
+}
+
+#lastProgress{
+    transition: width 4s ease 0s;
+}
+
+  #fileElem {
+    display: none;
+  }
